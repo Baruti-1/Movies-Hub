@@ -12,15 +12,15 @@ export const Search = ({ apiPath }) => {
 
   return (
     <main>
-      <section className="py-7">
-        <p className="text-3xl text-gray-700 dark:text-white">
+      <section class="py-7">
+        <p class="text-3xl text-gray-700 dark:text-white">
           {movies.length === 0
             ? `No result found for '${queryTerm}'`
             : `Result for '${queryTerm}'`}
         </p>
       </section>
-      <section className="max-w-7xl mx-auto py-7">
-        <div className="flex justify-start flex-wrap">
+      <section class="max-w-7xl mx-auto py-7">
+        <div class="flex justify-start flex-wrap">
           {movies.map((movie) => (
             <Card key={movie.id} movie={movie} />
           ))}

@@ -5,7 +5,7 @@ import { Button } from "../components";
 
 export const PageNotFound = () => {
   useEffect(() => {
-    document.title = `Page Not Found`;
+    document.title = `Page Not Found / Cinemate`;
   });
 
   return (
@@ -25,7 +25,7 @@ export const PageNotFound = () => {
         </div>
         <div className="flex justify-center my-4">
           <Link to="/">
-            <Button>Back To Movies Hub</Button>
+            <Button>Back To Cinemate</Button>
           </Link>
         </div>
       </section>
